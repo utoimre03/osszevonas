@@ -10,7 +10,7 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
     public EsemenyekOsszevonasa() {
         initComponents();
         osszeg = 0;
-        jTextField1.setText(osszeg + " Ft");
+        frissit();
     }
 
     @SuppressWarnings("unchecked")
@@ -92,9 +92,13 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
             osszeg -= 200;
         }
         
-        jTextField1.setText(osszeg + " Ft");
+        frissit();
     }//GEN-LAST:event_osszesito
 
+    private void frissit() {
+        jTextField1.setText(osszeg + " Ft");
+    }
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
